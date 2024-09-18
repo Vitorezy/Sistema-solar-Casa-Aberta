@@ -15,62 +15,74 @@ body{
     width: 100vw;
     height: 100vh;
     color: white;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-section.container_planeta{
+div#container_planeta{
     background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
-.parallax-cor { 
-    height: 700px;
-    background-image: linear-gradient(to bottom, rgb(20, 20, 20), rgb(5, 5, 5), black);
+button { 
+    position: fixed;
+    background-color: transparent;
+    border: 0px;
+    transition-timing-function: ease;
 }
-section.container_planeta > img { 
+button:hover { 
+    scale: 105%;
+    transition-duration: .6s;
+}
+button#btnproximo { 
     position: absolute;
-    top: -4%;
-    left: 15%;
-    scale: 59%;
+    left: 95%;
+}
+div#container_planeta > img { 
+    position: absolute;
+    top: -18%;
+    left: 8%;
+    scale: 53%;
     border-radius: 50%;
     transition-timing-function: ease;
     transition-duration: .5s;
 }
-section.container_planeta > img:hover {
+div#container_planeta > img:hover {
     cursor: pointer;
-    scale: 60%;
+    scale: 54%;
     animation: girar 60s ease infinite;
 }
-section.container_planeta > h1 { 
+div#container_planeta > h1 { 
     font-family: 'bebas', Arial, Helvetica, sans-serif;
     color: white;
     text-decoration: underline;
     text-shadow: -3px 0px 3px rgba(255, 255, 0, 0.6);
     font-weight: 200;
     letter-spacing: 2px;
-    position: relative;
-    top: 5%;
-    left: 30%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 0%;
+    left: 50%;
     font-size:8rem;
 }
-.container_contúdo_planeta { 
-    position: relative;
-    top: 0%;
-    left: 67%;
+#container_contúdo_planeta { 
+    display: inline;
+    position: absolute;
+    top: 15%;
+    left: 73%;
     border-radius: 20px;
     border: 2px solid rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.7);
-    width: 30%;
+    width: 25%;
     height: 80%;
 }
-.header_conteudo { 
+#header_conteudo { 
     font-family: 'bebas', Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: bolder;
-    font-size: 4rem;
+    font-size: 3rem;
     border: 2px solid white;
     letter-spacing: 2px;
     text-shadow: -3px 1px 3px rgba(255, 255, 255, 0.5);

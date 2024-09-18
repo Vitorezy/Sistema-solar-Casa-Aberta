@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
     <title>Pagina inicial</title>
 </head>
 <body>
-    <section class="container_planeta">
+    <div id="container_planeta">
+        <button id="btnvoltar" value="0" title="Voltar um planeta.">
+            <img src="images/voltar_planeta.png" alt="Botão para voltar um planeta">
+        </button>
+        <button id="btnproximo" value="0" title="Próximo planeta.">
+            <img src="images/proximo_planeta.png" alt="Botão para próximo planeta">
+        </button>
         <h1>SISTEMA SOLAR</h1>
-        <img src="images/terra.png">
-        <div class="container_contúdo_planeta">
-            <div class="header_conteudo">
-                <h1>TERRA</h1>
+        <img id="imagem_planeta" src="images/terra.png">
+        <div id="container_contúdo_planeta">
+            <div id="header_conteudo">
+                <h1 id="nome_planeta">TERRA</h1>
             </div>
         </div>
-    </section>
-    <div class="parallax-cor"></div>
-    <section class="container_planeta">
-        <h1>SISTEMA SOLAR</h1>
-        <img src="images/terra.png">
-        <div class="container_contúdo_planeta">
-            <div class="header_conteudo">
-                <h1>TERRA</h1>
-            </div>
-        </div>
-    </section>
+    </div>
+
+
 </body>
 </html>
