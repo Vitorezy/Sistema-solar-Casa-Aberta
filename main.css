@@ -6,6 +6,11 @@
     font-family: 'bebas';
     src: url(fontes/BebasNeue-Regular.ttf);
 }
+@keyframes girar {
+    from { transform: rotate(0deg); 
+    }
+    to { transform: rotate(360deg); }
+  }
 body{
     width: 100vw;
     height: 100vh;
@@ -13,44 +18,64 @@ body{
     overflow-x: hidden;
 }
 
-section#Inicio{
+section.container_planeta{
     background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
 }
-section#conteudo { 
-    width: 100%;
-    height: 100%;
-}
-#parallax-cor { 
+
+.parallax-cor { 
     height: 700px;
-    background-image: linear-gradient(to bottom, rgb(10, 10, 10), rgb(5, 5, 5), black);
+    background-image: linear-gradient(to bottom, rgb(20, 20, 20), rgb(5, 5, 5), black);
 }
-section#Inicio > img { 
+section.container_planeta > img { 
     position: absolute;
-    top: 30%;
-    left: 32%;
-    transform: translate(-50%, -50%);
-    scale: 55%;
+    top: -4%;
+    left: 15%;
+    scale: 59%;
     border-radius: 50%;
     transition-timing-function: ease;
     transition-duration: .5s;
 }
-section#Inicio > img:hover { 
-    scale: 56%;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+section.container_planeta > img:hover {
+    cursor: pointer;
+    scale: 60%;
+    animation: girar 60s ease infinite;
 }
-section#Inicio > h1 { 
+section.container_planeta > h1 { 
     font-family: 'bebas', Arial, Helvetica, sans-serif;
     color: white;
     text-decoration: underline;
     text-shadow: -3px 0px 3px rgba(255, 255, 0, 0.6);
     font-weight: 200;
     letter-spacing: 2px;
-    position: absolute;
-    top: 10%;
+    position: relative;
+    top: 5%;
     left: 30%;
     font-size:8rem;
+}
+.container_contúdo_planeta { 
+    position: relative;
+    top: 0%;
+    left: 67%;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 30%;
+    height: 80%;
+}
+.header_conteudo { 
+    font-family: 'bebas', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 4rem;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    text-shadow: -3px 1px 3px rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: 0px;
+    height: 15%;
+    border-radius: 15px 15px 0px 0px;
 }
