@@ -1,93 +1,183 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 @font-face {
-    font-family: 'bebas';
-    src: url(fontes/BebasNeue-Regular.ttf);
+  font-family: "bebas";
+  src: url(fontes/BebasNeue-Regular.ttf);
 }
 @keyframes girar {
-    from { transform: rotate(0deg); 
-    }
-    to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
   }
-body{
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    overflow: hidden;
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+
+  overflow: hidden;
 }
 
-div#container_planeta{
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+div#container_planeta {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
-button { 
-    position: fixed;
-    background-color: transparent;
-    border: 0px;
-    transition-timing-function: ease;
+button {
+  position: absolute;
+  background-color: transparent;
+  border: 0px;
+  transition-timing-function: ease;
 }
-button:hover { 
-    scale: 105%;
-    transition-duration: .6s;
+button:hover {
+  scale: 105%;
+  transition-duration: 0.6s;
 }
-button#btnproximo { 
-    position: absolute;
-    left: 95%;
+button#btnproximo {
+  left: 95%;
 }
-div#container_planeta > img { 
-    position: absolute;
-    top: -18%;
-    left: 8%;
-    scale: 53%;
-    border-radius: 50%;
-    transition-timing-function: ease;
-    transition-duration: .5s;
+div#container_planeta > a > img {
+  position: absolute;
+  top: -15%;
+  left: 18%;
+  scale: 53%;
+  border-radius: 50%;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
 }
-div#container_planeta > img:hover {
-    cursor: pointer;
-    scale: 54%;
-    animation: girar 60s ease infinite;
+
+div#container_planeta > a > img:hover {
+  cursor: pointer;
+  scale: 54%;
+  animation: girar 180s ease infinite;
 }
-div#container_planeta > h1 { 
-    font-family: 'bebas', Arial, Helvetica, sans-serif;
-    color: white;
-    text-decoration: underline;
-    text-shadow: -3px 0px 3px rgba(255, 255, 0, 0.6);
-    font-weight: 200;
-    letter-spacing: 2px;
-    position: absolute;
-    transform: translate(-50%, 0%);
-    top: 0%;
-    left: 50%;
-    font-size:8rem;
+div#container_planeta > h1 {
+  font-family: "bebas", Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: underline;
+  text-shadow: -3px 0px 3px rgba(255, 255, 0, 0.6);
+  font-weight: 200;
+  letter-spacing: 2px;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  top: 0%;
+  left: 50%;
+  font-size: 8rem;
 }
-#container_contúdo_planeta { 
-    display: inline;
-    position: absolute;
-    top: 15%;
-    left: 73%;
-    border-radius: 20px;
-    border: 2px solid rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 25%;
-    height: 80%;
+#container_contúdo_planeta {
+  display: inline;
+  position: absolute;
+  top: 15%;
+  left: 73%;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 25%;
+  height: 80%;
 }
-#header_conteudo { 
-    font-family: 'bebas', Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3rem;
-    border: 2px solid white;
-    letter-spacing: 2px;
-    text-shadow: -3px 1px 3px rgba(255, 255, 255, 0.5);
-    position: relative;
-    top: 0px;
-    height: 15%;
-    border-radius: 15px 15px 0px 0px;
+ol {
+  list-style-type: disc;
+  font-size: 3rem;
+  font-family: "bebas", Arial, Helvetica, sans-serif;
+  position: relative;
+  text-wrap: 1;
+  left: 9%;
+}
+#header_conteudo {
+  font-family: "bebas", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3rem;
+  border: 2px solid white;
+  letter-spacing: 2px;
+  text-shadow: -3px 1px 3px rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: 0px;
+  height: 15%;
+  border-radius: 15px 15px 0px 0px;
+}
+#caracteristicas_planetas {
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(27, 26, 26),
+    rgb(20, 20, 20),
+    rgb(14, 13, 13),
+    rgb(8, 8, 8),
+    rgb(7, 7, 7),
+    rgb(3, 3, 3)
+  );
+}
+#caracteristicas_planetas > h1 {
+  text-align: center;
+  font-family: "bebas", "Courier New", Courier, monospace;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-shadow: -2px 1px 2px rgba(24, 24, 24, 0.863);
+  font-weight: 600;
+}
+table {
+  table-layout: fixed;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 50%;
+}
+
+table th {
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+  text-shadow: -1px 1px 0.2px rgba(0, 0, 0, 0.637);
+  font-family: "bebas", "Courier New", Courier, monospace;
+  border: 3px solid white;
+  font-weight: 200;
+}
+table td {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: arial, "Courier New", Courier, monospace;
+  text-shadow: -1px 1px 0.2px rgba(0, 0, 0, 0.582);
+  border: 2px solid white;
+}
+#curiosidade_pln {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: arial;
+  font-size: 2.4rem;
+  width: 60%;
+  border-radius: 15px;
+  height: 30%;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.37);
+  text-shadow: -1px 1px 0.2px rgba(0, 0, 0, 0.582);
+}
+#voltartopo {
+  background-color: rgba(255, 255, 255, 0.452);
+  border-radius: 50%;
+  position: absolute;
+  height: 100px;
+  top: 185%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-property: scale;
+}
+#voltartopo:hover {
+  scale: 102%;
+  border: 2px solid white;
 }
