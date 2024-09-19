@@ -46,7 +46,7 @@ function MudarPágina() {
     td_plnMassa.innerHTML = "1,23";
     td_plnSat.innerHTML = "0";
     conteudo_escrito.innerHTML =
-      "<ol> <li>Diâmetro equatorial: 3.47 quilômetros.</li><li>Área da superfície: 38 milhões de quilômetros quadrados</li><li>Massa: 7,35.1022 kg.</li> </ol>";
+      "<ol> <li>Diâmetro equatorial: 3.47 quilômetros.</li><li>Área da superfície: 38 milhões²</li><li>Massa: 7,35.1022 kg.</li> </ol>";
     curiosidade_pln.innerHTML =
       "Acredita-se que a Lua foi criada após um objeto do tamanho de Marte se colidir com a Terra há 4,5 bilhões de anos, segundo a Nasa. Os detritos dessa colisão passaram a orbitar a Terra e eventualmente se uniram para formar nosso satélite.";
     imagem_planeta.src = "images/lua.png";
@@ -106,7 +106,7 @@ function MudarPágina() {
     td_plnMassa.innerHTML = "0,055";
     td_plnSat.innerHTML = "0";
     conteudo_escrito.innerHTML =
-      "<ol> <li>Diâmetro equatorial: 4.879 quilômetros.</li><li>Área da superfície: 7,5x107 km²</li><li>Massa: 3.302×1023 kg (330 bilhões de bilhões de toneladas).</li> </ol>";
+      "<ol> <li>Diâmetro equatorial: 4.879,4 quilômetros.</li><li>Área da superfície: 74.80 km²</li><li>Massa: 3,285 × 10^23 kg.</li> </ol>";
     curiosidade_pln.innerHTML =
       "Embora a radiação solar, as temperaturas extremas e a proximidade de Mercúrio ao Sol possam levar a acreditar que Mercúrio é o planeta mais quente do Sistema Solar, ele não é. Há outro corpo celeste que o ultrapassa. Graças à sua atmosfera densa e capacidade de contenção de calor, Vênus é considerado o planeta mais quente do Sistema Solar, segundo a Nasa.";
     imagem_planeta.src = "images/mercurio.png";
@@ -140,9 +140,9 @@ function MudarPágina() {
     td_plnNome.innerHTML = "Sol";
     td_plnVel.innerHTML = "47,9";
     td_plnMassa.innerHTML = "0,055";
-    td_plnSat.innerHTML = "0";
+    td_plnSat.innerHTML = "X";
     conteudo_escrito.innerHTML =
-      "<ol> <li>Diâmetro equatorial: 4.879 quilômetros.</li><li>Área da superfície: 7,5x107 km²</li><li>Massa: 3.302×1023 kg (330 bilhões de bilhões de toneladas).</li> </ol>";
+      "<ol> <li>Diâmetro equatorial: 1.392.700 km.</li><li>Área da superfície: 4,3 milhões de quilômetros</li><li>Massa: 1,989 × 10^30 kg.</li> </ol>";
     curiosidade_pln.innerHTML =
       "Embora a radiação solar, as temperaturas extremas e a proximidade de Mercúrio ao Sol possam levar a acreditar que Mercúrio é o planeta mais quente do Sistema Solar, ele não é. Há outro corpo celeste que o ultrapassa. Graças à sua atmosfera densa e capacidade de contenção de calor, Vênus é considerado o planeta mais quente do Sistema Solar, segundo a Nasa.";
     imagem_planeta.src = "images/sol.png";
