@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="gravidade.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Teste de Gravidade</title>
+    <script src="gravidade.js" defer></script>
   </head>
   <body>
+    <div id="voltar_pagina" title="Voltar para a página anterior">
+     <a href="index.html"> <img src="images/setaVoltarIcon.png" alt=""></a>
+    </div>
     <h1>TESTE OS EFEITOS DA GRAVIDADE</h1>
   </body>
-  <form action="gravidade.html" method="get">
+  <form>
     <label for="planeta_select"> Selecionar planeta </label>
     <select class="input_form_gravidade" name="planeta" id="planeta_select">
       <option value="terra">Terra</option>
-      <option value="Mercurio">Mercurio</option>
+      <option value="mercurio">Mercurio</option>
       <option value="venus">Vênus</option>
       <option value="marte">Marte</option>
-      <option value="Jupiter">Júpiter</option>
+      <option value="jupiter">Júpiter</option>
       <option value="saturno">Saturno</option>
       <option value="urano">Urano</option>
       <option value="netuno">Netuno</option>
@@ -32,10 +36,16 @@
       id="pesokginput"
       value="60"
     />
-    <input type="submit" value="Finalizar" />
-    <p>
-        Seu peso seria: <p>X</p>
+    <input id="btncalcular" type="button" value="Calcular" />
+    <p>Seu peso seria:</p>
+    <p id="pesoresult"></p>
+    <p id="fonte_calculo">
+      fonte:
+      <a style="color: rgb(125, 96, 255);"
+        href="https://recreio.com.br/noticias/planetario/qual-seria-o-seu-peso-em-outros-planetas.phtml#:~:text=O%20maior%20planeta%20do%20sistema,o%20valor%20por%202%2C64!&text=Apesar%20de%20ser%20um%20planeta,seu%20peso%20por%201%2C15."
+        target="_blank"
+        >Calculo de Peso.</a
+      >
     </p>
   </form>
-  
 </html>

@@ -46,8 +46,8 @@ button#btnproximo {
 }
 div#container_planeta > a > img {
   position: absolute;
-  top: -15%;
-  left: 18%;
+  top: -20%;
+  left: 12%;
   scale: 53%;
   border-radius: 50%;
   transition-timing-function: ease;
@@ -57,7 +57,7 @@ div#container_planeta > a > img {
 div#container_planeta > a > img:hover {
   cursor: pointer;
   scale: 54%;
-  animation: girar 180s ease infinite;
+  animation: girar 0s ease infinite;
 }
 div#container_planeta > h1 {
   font-family: "bebas", Arial, Helvetica, sans-serif;
@@ -75,30 +75,33 @@ div#container_planeta > h1 {
 #container_contúdo_planeta {
   display: inline;
   position: absolute;
-  top: 15%;
-  left: 73%;
+  top: 20%;
+  left: 68%;
   border-radius: 20px;
   border: 2px solid rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.7);
-  width: 25%;
-  height: 80%;
+  width: 30%;
+  height: 75%;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
 }
-ol {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   list-style-type: disc;
-  font-size: 3rem;
+  font-size:3rem;
   font-family: "bebas", Arial, Helvetica, sans-serif;
   position: relative;
-  text-wrap: 1;
   left: 9%;
 }
 #header_conteudo {
   font-family: "bebas", Arial, Helvetica, sans-serif;
   text-align: center;
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 2.5rem;
   border: 2px solid white;
   letter-spacing: 2px;
-  text-shadow: -3px 1px 3px rgba(255, 255, 255, 0.5);
+  text-shadow: -3px 1px 2px rgba(255, 255, 255, 0.5);
   position: relative;
   top: 0px;
   height: 15%;
@@ -152,15 +155,15 @@ table td {
 }
 #curiosidade_pln {
   position: relative;
-  top: 20%;
+  top: 14%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: arial;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   width: 60%;
   border-radius: 15px;
-  height: 30%;
+  height: 25%;
   border: 2px solid white;
   background-color: rgba(0, 0, 0, 0.37);
   text-shadow: -1px 1px 0.2px rgba(0, 0, 0, 0.582);
