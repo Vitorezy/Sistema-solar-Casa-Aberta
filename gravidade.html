@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="gravidade.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Teste de Gravidade</title>
 </head>
 <body>
     <h1>TESTE OS EFEITOS DA GRAVIDADE</h1>
 </body>
 <form action="gravidade.html" method="get">
-    
+    <label for="planeta_select">
+        Selecionar planeta
+    </label>
+    <select name="planeta" id="planeta_select">
+        <option value="terra">Terra</option>
+        <option value="Mercurio">Mercurio</option>
+        <option value="venus">Vênus</option>
+        <option value="marte">Marte</option>
+        <option value="Jupiter">Júpiter</option>
+        <option value="saturno">Saturno</option>
+        <option value="urano">Urano</option>
+        <option value="netuno">Netuno</option>
+    </select>
+    <label for="pesokginput">
+        seu peso em KG (Quilogramas)
+    </label>
+    <input type="number" name="pesokg" maxlength="600" id="pesokginput" value="60">
+    <input type="submit" value="Finalizar">
 </form>
 </html>

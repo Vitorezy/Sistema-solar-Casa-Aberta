@@ -36,3 +36,21 @@ form {
     height: 85%;
     width: 40%;
 }
+form { 
+  display: flex;
+  flex-direction: column;
+  gap: 0.8%;
+  font-family: 'bebas', Arial, Helvetica, sans-serif;
+  
+}
+form > label { 
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-shadow: -1px 1px 1px white;
+  background-color: black;
+  font-weight: 500;
+}
+form > select { 
+  cursor: pointer;
+   border: 2px solid black;
+}
