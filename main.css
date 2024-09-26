@@ -24,7 +24,7 @@ body {
 }
 
 div#container_planeta {
-  background-image: url(images/background.jpg);
+  background-image: url(images/background.gif);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -46,8 +46,8 @@ button#btnproximo {
 }
 div#container_planeta > a > img {
   position: absolute;
-  top: -20%;
-  left: 12%;
+  top: -15%;
+  left: 18%;
   scale: 53%;
   border-radius: 50%;
   transition-timing-function: ease;
@@ -89,7 +89,7 @@ ul {
   padding: 0;
   margin: 0;
   list-style-type: disc;
-  font-size:3rem;
+  font-size: 3rem;
   font-family: "bebas", Arial, Helvetica, sans-serif;
   position: relative;
   left: 9%;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="clicker.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Solar Clicker</title>
+</head>
+<body>
+    <!-- OBJETO PRINCIPAL -->
+    <button id = "obj_clicker" onclick="obj_click()">
+        <img src="images/plutao.png" id = "obj" draggable="false">
+    </button>
+
+    <!-- TAMANHO E NIVEL DO PLANETA -->
+    <p>Tamanho do corpo:</p>
+    <div id = "tamanho">0 </div>
+    <div id = "nivel"></div>
+
+    <section id="conquistas">
+        <div id="conquistas_header">CONQUISTAS</div>
+        <div id="container_conquista">
+            <div class="conquista_box" id="plutao">
+                <h1>Plutão</h1>
+                <P>Comece com o planeta anão!</P>
+            </div>
+            <div class="conquista_box" id="lua">
+                <h1> Lua </h1>
+                <p> O satélite natural da terra!</p> 
+            </div>
+            <div class="conquista_box" id="mercurio"></div>
+            <div class="conquista_box" id="marte"></div>
+            <div class="conquista_box" id="venus"></div>
+            <div class="conquista_box" id="terra">
+                <h1>Terra</h1>
+                <P>Você desbloqueou o Planeta Terra!</P>
+            </div>
+            <div class="conquista_box" id="urano"></div>
+            <div class="conquista_box" id="netuno"></div>
+            <div class="conquista_box" id="saturno"></div>
+            <div class="conquista_box" id="jupiter"></div>
+            <div class="conquista_box" id="sol"></div>
+            <div class="conquista_box" id="supernova">
+                <h1>SECRETO</h1>
+                <p> Você desbloqueou o secreto!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
