@@ -17,6 +17,23 @@ botaovoltar.addEventListener("click", () => {
   }
   MudarPágina();
 });
+var container_botao_nav = document.getElementById("container_botao_nav");
+container_botao_nav.addEventListener("click", () => {
+  var mudar_pagina_link = document.getElementById("mudar_pagina_link");
+  var container_links_nav = document.getElementById("container_links_nav");
+  var botaoabrirfecharmenu = document.getElementById("botaoabrirfecharmenu");
+  if (mudar_pagina_link.style.height == "17%") {
+    mudar_pagina_link.style.height = "6%";
+    container_botao_nav.style.top = "50%";
+    container_links_nav.style.fontSize = "0rem";
+    botaoabrirfecharmenu.src = "images/menuabrirICon.png";
+  } else {
+    mudar_pagina_link.style.height = "17%";
+    container_botao_nav.style.top = "80%";
+    container_links_nav.style.fontSize = "2rem";
+    botaoabrirfecharmenu.src = "images/fecharIcon.png";
+  }
+});
 function MudarPágina() {
   var nome_planeta = document.getElementById("nome_planeta");
   var imagem_planeta = document.getElementById("imagem_planeta");
