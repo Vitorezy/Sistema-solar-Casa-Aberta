@@ -155,8 +155,8 @@ function MudarPágina() {
   } else if (cont_pagina == 0) {
     nome_planeta.innerHTML = "SOL";
     td_plnNome.innerHTML = "Sol";
-    td_plnVel.innerHTML = "47,9";
-    td_plnMassa.innerHTML = "0,055";
+    td_plnVel.innerHTML = "X";
+    td_plnMassa.innerHTML = "333000";
     td_plnSat.innerHTML = "X";
     conteudo_escrito.innerHTML =
       "<ul> <li>Diâmetro equatorial: 1.392.700 km.</li><li>Área da superfície: 4,3 milhões de quilômetros</li><li>Massa: 1,989 × 10^30 kg.</li> </ul>";

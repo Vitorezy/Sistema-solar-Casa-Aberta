@@ -13,7 +13,7 @@
     <div id="voltar_pagina" title="Voltar para a página anterior">
      <a href="index.html"> <img src="images/setaVoltarIcon.png" alt=""></a>
     </div>
-    <h1>TESTE OS EFEITOS DA GRAVIDADE</h1>
+    <h1>TESTE OS EFEITOS DE OUTROS PLANETAS</h1>
   </body>
   <form>
     <label for="planeta_select"> Selecionar planeta </label>
@@ -36,9 +36,13 @@
       id="pesokginput"
       value="60"
     />
+    <label for="input_idade"> Sua idade (Em anos) </label>
+    <input type="number" name="idade" id="input_idade" maxlength="130" value="12" class='input_form_gravidade'>
     <input id="btncalcular" type="button" value="Calcular" />
     <p>Seu peso seria:</p>
-    <p id="pesoresult"></p>
+    <p class="result_submit" id="pesoresult"></p>
+    <p>A idade que você teria: </p>
+    <p class="result_submit" id="idaderesult"> </p>
     <p id="fonte_calculo">
       fonte:
       <a style="color: rgb(125, 96, 255);"
