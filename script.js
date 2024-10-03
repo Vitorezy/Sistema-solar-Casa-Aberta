@@ -22,15 +22,15 @@ container_botao_nav.addEventListener("click", () => {
   var mudar_pagina_link = document.getElementById("mudar_pagina_link");
   var container_links_nav = document.getElementById("container_links_nav");
   var botaoabrirfecharmenu = document.getElementById("botaoabrirfecharmenu");
-  if (mudar_pagina_link.style.height == "17%") {
-    mudar_pagina_link.style.height = "6%";
+  if (mudar_pagina_link.style.height == "16%") {
+    mudar_pagina_link.style.height = "5%";
     container_botao_nav.style.top = "20%";
     container_links_nav.style.fontSize = "0rem";
     botaoabrirfecharmenu.src = "images/menuabrirICon.png";
   } else {
-    mudar_pagina_link.style.height = "17%";
+    mudar_pagina_link.style.height = "16%";
     container_botao_nav.style.top = "75%";
-    container_links_nav.style.fontSize = "2rem";
+    container_links_nav.style.fontSize = "1.4rem";
     botaoabrirfecharmenu.src = "images/fecharIcon.png";
   }
 });
