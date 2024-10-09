@@ -232,3 +232,58 @@ button > img:active{
 #sol {
   background-image: url(images/sol-banner.gif);
 }
+@media screen and (max-width: 768px) { 
+  .conquista_box > h1 { 
+    margin: 0;
+    font-size: 2rem;
+  }
+  .conquista_box > p { 
+    margin: 0;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.103);
+  }
+  #conquistas {
+    height: 60%;
+    width: 40%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: 35%;
+    right: -2%;
+  }
+  #tamanho {
+    margin: auto;
+    position: fixed;
+    top: 70%;
+    left: 45%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 2.8rem;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 200px;
+    height: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  #nivel {
+    margin: auto;
+    position: fixed;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    letter-spacing: 1px;
+    box-shadow: 0px 1px 2px white;
+    border: 5px solid white;
+    color: white;
+    font-family: "Anton", sans-serif;
+    background-color: rgba(0, 0, 0, 0.534); 
+  }
+}
