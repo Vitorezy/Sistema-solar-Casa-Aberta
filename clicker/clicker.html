@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="clicker.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Solar Clicker</title>
+</head>
+<body>
+    <!-- BOTÃO DE VOLTAR -->
+    <div id="voltar_pagina" title="Voltar para a página anterior">
+        <a id="voltarpagelink" href="../index.html"> <img src="images/setaVoltarIcon.png" alt=""></a>
+    </div>
+
+    <!-- OBJETO PRINCIPAL -->
+    <button id = "obj_clicker" onclick="obj_click()">
+        <img src="images/plutao.png" id="obj" draggable="false">
+    </button>
+
+    <!-- TAMANHO E NIVEL DO PLANETA -->
+    <div id = "tamanho">0 </div>
+    <div id = "nivel"></div>
+
+    <!-- JANELA DE CONQUISTAS -->
+    <section id="conquistas">
+        <div id="conquistas_header">CONQUISTAS</div>
+        <div id="container_conquista">
+            <div class="conquista_box" id="plutao">
+                <h1>Plutão</h1>
+                <P>Comece com o planeta anão!</P>
+            </div>
+            <div class="conquista_box" id="lua">
+                <h1> Lua </h1>
+                <p> Satélite natural da terra</p> 
+            </div>
+            <div class="conquista_box" id="mercurio">
+                <h1> Mercúrio </h1>
+                <p>O planeta mais veloz </p>
+            </div>
+            <div class="conquista_box" id="marte">
+                <h1> Marte </h1>
+                <p> O planeta vermelho </p>
+            </div>
+            <div class="conquista_box" id="venus">
+                <h1> Vênus </h1>
+                <p> O gêmeo da Terra </p>
+            </div>
+            <div class="conquista_box" id="terra">
+                <h1>Terra</h1>
+                <P>O planeta água</P>
+            </div>
+            <div class="conquista_box" id="urano">
+                <h1> Urano </h1>
+                <p> O Gigante de Gelo </p>
+            </div>
+            <div class="conquista_box" id="netuno">
+                <h1> Netuno </h1> 
+                <P> Deus dos mares </P>
+            </div>
+            <div class="conquista_box" id="saturno">
+                <h1> Saturno </h1>
+                <p> O senhor dos anéis </p>
+            </div>
+            <div class="conquista_box" id="jupiter">
+                <h1> Jupiter </h1>
+                <P> O Maior planeta </P>
+            </div>
+            <div class="conquista_box" id="sol">
+                <h1> Sol </h1> 
+                <p> A estrela do Sistema Solar </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

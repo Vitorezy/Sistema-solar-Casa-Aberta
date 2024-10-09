@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>SISTEMA SOLAR</title>
   </head>
 
   <body>
     <div id="container_planeta">
+      <!--Menu para outras paginas-->
       <nav id="mudar_pagina_link">
         <div id="container_links_nav">
-          <a href="clicker/index.html"> JOGO CLICKER</a>
+          <a href="clicker/clicker.html"> JOGO CLICKER</a>
           <a href="gravidade.html"> TESTE EM PLANETAS</a>
         </div>
         <div id="container_botao_nav">
           <img
             id="botaoabrirfecharmenu"
             src="images/menuabrirICon.png"
-            alt=""
+            alt="Botão de abrir e fechar o menu"
+            title="------Abrir e fechar o menu"
           />
         </div>
       </nav>
-      <button id="btnvoltar" value="0" title="Voltar um planeta.">
+      <!--Botão de ir e voltar entre os planetas no inicio-->
+      <button id="btnvoltar" value="0" title="-----Voltar um planeta.">
         <img
           src="images/voltar_planeta.png"
           alt="Botão para voltar um planeta"
@@ -37,27 +40,32 @@
           alt="Botão para próximo planeta"
         />
       </button>
+      <!--Começo do conteúdo-->
       <h1>SISTEMA SOLAR</h1>
-      <a href="#caracteristicas_planetas">
+      <!--Imagem do planeta que ao clicar te redireciona ao final da pagina -->
+      <a id="planeta_link" href="#caracteristicas_planetas" draggable="false">
         <img
           id="imagem_planeta"
           src="images/sol.png"
           title="Clique para ver mais!"
+          draggable="false"
         />
       </a>
+      <!--container lateral que demonstra informações sobre o planeta-->
       <div id="container_contúdo_planeta">
         <div id="header_conteudo">
           <h1 id="nome_planeta">SOL</h1>
         </div>
         <div id="conteudo_escrito">
           <ul>
-            <li>Diâmetro equatorial: 4.879 quilômetros.</li>
-            <li>Área da superfície: 7,5x107 km²</li>
-            <li>Massa: 3.302×1023 kg (330 bilhões de bilhões de toneladas).</li>
+            <li>Diâmetro equatorial: 1.392.700 km.</li>
+            <li>Área da superfície: 6,0877 × 1012 km²</li>
+            <li>Massa: 1,9891 × 1030 kg.</li>
           </ul>
         </div>
       </div>
     </div>
+    <!--parte inferior da página que te dá informações mais especificas sobre cada planeta-->
     <div id="caracteristicas_planetas">
       <h1>PRINCIPAIS CARACTERÍSTICAS</h1>
       <table>
@@ -65,11 +73,11 @@
           <th>Corpo Celeste</th>
           <th>Velocidade Orbital (km/s)</th>
           <th>Massa em relação a da Terra</th>
-          <th>Satélites conhecidos (Naturai)</th>
+          <th>Satélites conhecidos (Natural)</th>
         </tr>
         <tr>
           <td id="td_plnNome">Sol</td>
-          <td id="td_plnVel">X</td>
+          <td id="td_plnVel">251</td>
           <td id="td_plnMassa">333000</td>
           <td id="td_plnSat">X</td>
         </tr>
@@ -80,6 +88,7 @@
         planetas Terra. A luz do Sol demora 8 minutos e 18 segundos para chegar
         à Terra. O Sol tem cerca de 4,5 bilhões de anos de idade.
       </div>
+      <!--Botão de voltar para o inicio da página-->
       <a id="voltartopo" href="#container_planeta">
         <img src="images/voltartopo.png" alt="" title="Clique para voltar!" />
       </a>

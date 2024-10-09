@@ -1,0 +1,15 @@
+"O Sistema Solar é um conjunto formado por oito planetas e outros corpos celestes, que orbitam o Sol, a sua principal estrela. Está localizado na Via Láctea, uma das galáxias que formam o Universo. São planetas do Sistema Solar: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno."
+"cinco planetas anões. = ceres, plutão, haumea, makemake, éris"
+"Mercúrio, Vênus, Terra e Marte. São caracterizados por serem constituídos de rochas, ferro e metais pesados e por possuírem maior densidade, visto que os materiais densos possuem tendência a estarem mais próximos ao Sol."
+"Júpiter, Saturno, Urano e Netuno. São maiores que os planetas telúricos em termos de dimensão. São caracterizados por serem formados por gases como hélio e hidrogênio. São menos densos, por isso mais afastados do Sol. Há evidências de que esses planetas possuem um núcleo rochoso, contudo, não apresentam uma superfície definida. Todos apresentam vários satélites naturais e sistemas de anéis."
+"Júpiter é o maior planeta do Sistema Solar. Situado entre Marte e Saturno, esse planeta pode até mesmo ser visto a olhu nu durante a noite. "
+"Mercúrio é o menor planeta do Sistema Solar e o que está mais próximo do Sol. Ele se tornou o menor planeta após o rebaixamento de Plutão, que foi reclassificado como planeta anão."
+
+
+ Hipótese Nebular é uma teoria sugerida em 1755 pelo filósofo alemão Immanuel Kant e desenvolvida em 1796 pelo matemático
+francês Pierre-Simon Laplace no livro Exposition du Systéme du Monde. Segundo essa hipótese o Sistema Solar teria se originado há
+cerca de 4.600 milhões de anos a partir de uma vasta nuvem de gás e poeira - a nebulosa solar.
+
+
+Veja mais sobre "Sistema Solar" em: https://brasilescola.uol.com.br/geografia/sistema-solar.htm
+https://acervodigital.unesp.br/bitstream/123456789/256/1/a_origem_do_sistema_solar_e_do_planeta_terra.pdf

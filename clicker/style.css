@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+  cursor: url("images/click.png"), auto;
+}
 
 body {
   text-align: center;
@@ -11,30 +14,24 @@ body {
   overflow: hidden;
   height: 100%;
   font-family: 'bebas neue', Arial, Helvetica, sans-serif;
+  user-select: none;}
+
+/* BOTÃO DE VOLTAR */
+#voltar_pagina { 
+  position: fixed;
 }
 
-#container_conquista::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
+#voltar_pagina:hover { 
+  opacity: 90%;
+  scale: 102%;
 }
 
-#container_conquista::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
-}
-
-#container_conquista::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #555;
+#voltarpagelink img:hover{
+  cursor: url("images/hover.png"), auto;
 }
 
 /* BOTÃO DO PLANETA */
-button {
+#obj_clicker {
   background: none;
   border: none;
   position: absolute;
@@ -43,33 +40,58 @@ button {
   transform: translate(-50%, -50%);
 }
 
+
 button img {
-  width: 400px;
+  width: 300px;
   transition: transform 0.3s ease;
   filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.13)) saturate(150%);
 }
 
-button img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+/* ANIMAÇÃO PARA CLICK E HOVER */
+button > img:hover {
+  cursor: url("images/hover.png"), auto;
+  animation: bounce;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
 
-button img:active {
-  transform: scale(0.95);
-  transition: transform 0.1s ease;
+button > img:active{
+  animation: active;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
 }
+
+
+@keyframes bounce{
+  25%{transform: scale(1.1);}
+  50%{transform: scale(0.9);}
+  75%{transform: scale(1.05);}
+  100%{transform: scale(1.0);}
+}
+
+@keyframes active{
+  25%{transform: scale(0.8);}
+  50%{transform: scale(1.1);}
+  75%{transform: scale(0.9);}
+  100%{transform: scale(1.0);}
+}
+
+.go-back{
+  position: absolute;
+  background-image: url(images/voltar_planeta.png);
+  color: white;
+}
+
 
 /* TEXTO DE TAMANHO E NIVEL */
 #tamanho {
   margin: auto;
   position: fixed;
-  
-  top: 60%;
+  top: 70%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
   font-size: 2.8rem;
-
   color: white;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.534);
@@ -77,7 +99,6 @@ button img:active {
   height: 60px;
   font-weight: 700;
   letter-spacing: 1px;
-
 }
 
 #nivel {
@@ -100,13 +121,15 @@ button img:active {
   background-color: rgba(0, 0, 0, 0.534); 
 }
 
+/* JANELA DE CONQUISTAS */
 #conquistas {
   background-color: rgba(0, 0, 0, 0.685);
   border: 2px solid white;
   margin: 5%;
-  height: 75%;
+  height: 80%;
   width: 25%;
   position: fixed;
+  overflow:auto;
   top: 0%;
   right: 0%;
 }
@@ -119,12 +142,12 @@ button img:active {
 }
 
 #container_conquista {
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 90%;
   width: 100%;
 }
 
@@ -144,6 +167,7 @@ button img:active {
   justify-content: center;
   scale: 0%;
   transition: 0.1s ease;
+  user-select: none;
 }
 .conquista_box > h1 { 
   margin: 0;
@@ -152,27 +176,59 @@ button img:active {
 .conquista_box > p { 
   margin: 0;
   font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.24);
-}
-#plutao {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  text-shadow: black -1px 0px 5px;
-  background-image: url(images/plutao-banner.gif);
-  align-items: center;
-  justify-content: center;
-  scale: 100%;
-  transition: 0.1s ease;
+  background-color: rgba(0, 0, 0, 0.103);
 }
 
-#terra {
-  background-image: url(images/makeagif.gif);
+/* BARRA DE ROLAGEM PERSONALIZADA */
+#conquistas::-webkit-scrollbar {
+  width: 4px;
 }
+#conquistas::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  outline: 1px solid #333333;
+}
+
+/* DEFINIÇÃO DO GIF DE CADA CONQUISTA */
+#plutao {
+  background-image: url(images/plutao-banner.gif);
+}
+
 #lua {
   background-image: url(images/lua-banner.gif);
 }
 
-#supernova {
-  background-image: url(images/secreto.gif);
+#mercurio {
+  background-image: url(images/mercurio-banner.gif);
+}
+
+#marte {
+  background-image: url(images/marte-banner.gif);
+}
+
+#venus {
+  background-image: url(images/venus-banner.gif);
+}
+
+#terra {
+  background-image: url(images/terra-banner.gif);
+}
+
+#urano {
+  background-image: url(images/urano-banner.gif);
+}
+
+#netuno {
+  background-image: url(images/netuno-banner.gif);
+}
+
+#saturno {
+  background-image: url(images/saturno-banner.gif);
+}
+
+#jupiter {
+  background-image: url(images/jupiter-banner.gif);
+}
+
+#sol {
+  background-image: url(images/sol-banner.gif);
 }

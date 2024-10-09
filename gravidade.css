@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  cursor: url("images/click.png"), auto;
 }
 
 @font-face {
@@ -17,12 +18,26 @@ body {
 #voltar_pagina { 
   position: fixed;
 }
-#voltar_pagina:hover { 
+
+#voltar_pagina:hover {
   opacity: 90%;
   scale: 102%;
 }
+
+#voltar_pagina img:hover{
+  cursor: url("images/hover.png"), auto;
+}
+
+input:hover{
+  cursor: url("images/hover.png"), auto;
+}
+
+#btncalcular:hover{
+  cursor: url("images/hover.png"), auto;
+}
+
 h1 {
-  font-size: 5rem;
+  font-size: 3.7rem;
   font-family: "bebas", Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
   text-shadow: -2px 1px 2px rgba(255, 255, 255, 0.425);

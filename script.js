@@ -35,6 +35,7 @@ container_botao_nav.addEventListener("click", () => {
   }
 });
 function MudarPágina() {
+  var planeta_link = document.getElementById('planeta_link')
   var nome_planeta = document.getElementById("nome_planeta");
   var imagem_planeta = document.getElementById("imagem_planeta");
   var td_plnNome = document.getElementById("td_plnNome");
@@ -48,6 +49,8 @@ function MudarPágina() {
     nome_planeta.innerHTML = "TERRA";
     td_plnNome.innerHTML = "Terra";
     td_plnVel.innerHTML = "29,8";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnMassa.innerHTML = "1";
     td_plnSat.innerHTML = "1";
     conteudo_escrito.innerHTML =
@@ -58,6 +61,8 @@ function MudarPágina() {
     imagem_planeta.style.animationDuration = "45s";
   } else if (cont_pagina == 4) {
     nome_planeta.innerHTML = "lua";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnNome.innerHTML = "Lua";
     td_plnVel.innerHTML = "1,02";
     td_plnMassa.innerHTML = "1,23";
@@ -70,6 +75,8 @@ function MudarPágina() {
     imagem_planeta.style.animationDuration = "25s";
   } else if (cont_pagina == 6) {
     nome_planeta.innerHTML = "jupiter";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnNome.innerHTML = "Júpiter";
     td_plnVel.innerHTML = "13,1";
     td_plnMassa.innerHTML = "318";
@@ -81,6 +88,8 @@ function MudarPágina() {
     imagem_planeta.src = "images/jupiter.png";
     imagem_planeta.style.animationDuration = "15s";
   } else if (cont_pagina == 7) {
+    planeta_link.style.left = '45%'
+    imagem_planeta.style.width = '120%'
     nome_planeta.innerHTML = "SATURNO";
     td_plnNome.innerHTML = "Saturno";
     td_plnVel.innerHTML = "9,6";
@@ -91,9 +100,11 @@ function MudarPágina() {
     curiosidade_pln.innerHTML =
       "Os anéis de Saturno são formados por partículas e fragmentos maiores de rocha e gelo, originárias de asteroides, cometas e luas que foram destruídos pela força gravitacional do planeta. Distribuem-se horizontalmente por até 282.000 km, com espessura variável que pode ir de alguns metros a 1 km, de acordo com a literatura acadêmica.";
     imagem_planeta.src = "images/saturno.png";
-    imagem_planeta.style.animationDuration = "18s";
+    imagem_planeta.style.animationDuration = "0s";
   } else if (cont_pagina == 8) {
     nome_planeta.innerHTML = "URANO";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnNome.innerHTML = "Urano";
     td_plnVel.innerHTML = "6,8";
     td_plnMassa.innerHTML = "14,6";
@@ -106,6 +117,8 @@ function MudarPágina() {
     imagem_planeta.style.animationDuration = "25s";
   } else if (cont_pagina == 5) {
     nome_planeta.innerHTML = "MARTE";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnNome.innerHTML = "Marte";
     td_plnVel.innerHTML = "24,1";
     td_plnMassa.innerHTML = "0,108";
@@ -118,6 +131,8 @@ function MudarPágina() {
     imagem_planeta.style.animationDuration = "45s";
   } else if (cont_pagina == 1) {
     nome_planeta.innerHTML = "MERCÚRIO";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnNome.innerHTML = "Mercúrio";
     td_plnVel.innerHTML = "47,9";
     td_plnMassa.innerHTML = "0,055";
@@ -131,6 +146,8 @@ function MudarPágina() {
   } else if (cont_pagina == 9) {
     nome_planeta.innerHTML = "NETUNO";
     td_plnNome.innerHTML = "Netuno";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnVel.innerHTML = "5,4";
     td_plnMassa.innerHTML = "17,2";
     td_plnSat.innerHTML = "11";
@@ -143,6 +160,8 @@ function MudarPágina() {
   } else if (cont_pagina == 2) {
     nome_planeta.innerHTML = "VÊNUS";
     td_plnNome.innerHTML = "Vênus";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnVel.innerHTML = "35";
     td_plnMassa.innerHTML = "0,815";
     td_plnSat.innerHTML = "0";
@@ -154,15 +173,18 @@ function MudarPágina() {
     imagem_planeta.style.animationDuration = "600s";
   } else if (cont_pagina == 0) {
     nome_planeta.innerHTML = "SOL";
+    planeta_link.style.left = '50%'
+    imagem_planeta.style.width = '100%'
     td_plnNome.innerHTML = "Sol";
-    td_plnVel.innerHTML = "X";
+    td_plnVel.innerHTML = "251";
     td_plnMassa.innerHTML = "333000";
     td_plnSat.innerHTML = "X";
     conteudo_escrito.innerHTML =
-      "<ul> <li>Diâmetro equatorial: 1.392.700 km.</li><li>Área da superfície: 4,3 milhões de quilômetros</li><li>Massa: 1,989 × 10^30 kg.</li> </ul>";
+      "<ul> <li>Diâmetro equatorial: 1.392.700 km.</li><li>Área da superfície: 6,0877 × 1012 km2</li><li>Massa: 1,9891 × 1030 kg</li> </ul>";
     curiosidade_pln.innerHTML =
       "Embora a radiação solar, as temperaturas extremas e a proximidade de Mercúrio ao Sol possam levar a acreditar que Mercúrio é o planeta mais quente do Sistema Solar, ele não é. Há outro corpo celeste que o ultrapassa. Graças à sua atmosfera densa e capacidade de contenção de calor, Vênus é considerado o planeta mais quente do Sistema Solar, segundo a Nasa.";
     imagem_planeta.src = "images/sol.png";
     imagem_planeta.style.animationDuration = "0s";
   }
+
 }
